@@ -1,0 +1,30 @@
+ <html>
+ <body>
+ <%=form_for @person do |p|%>
+
+  <div class="form-group">
+  <%=p.label :firstname%>
+ <%=p.text_field :first_name%>
+  </div>
+
+<div class="form-group">
+  <%=p.label :lastname%>
+  <%=p.text_field :last_name%>
+  </div>
+
+  <div class="form-group">
+  <%=p.label :city%>
+  <%=p.text_field :city%>
+  </div>
+
+  <div class="form-group">
+  <%=p.label :state%>
+  <%=p.text_field :state%>
+  </div>
+
+
+
+  <%=p.submit "submit"%>
+  <%end%>  
+  </body>
+  </html>
